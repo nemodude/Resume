@@ -1,0 +1,214 @@
+* {box-sizing: border-box;}
+
+/* when the screen is 750px or larger, do this */
+/* @media (min-width: 750px) {   */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+      "h h h h h h h h h"
+      "s s s s s s s s s"
+      "e e e e e e e e e"
+      "r r r r r r r r r"
+      "f f f f f f f f f";
+    /* always start with borders
+    border: 4px solid #f76707; */
+    /* border-radius: 5px; */
+    /* margin: 0 auto; */
+        }
+
+.wrapper > div {
+    border-bottom: 2px solid lightgrey;
+    border-radius: 2px;
+    /* background-color: grey; */
+    border
+    padding: .5em;
+}
+
+.header {
+    grid-area: h;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "name . contact";
+}
+
+.name {
+    grid-area: name;
+}
+.name:hover{
+    grid-area: name;
+    -webkit-animation: pulse 2s;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+
+.skills {
+    background-color: lightgray;
+    grid-area: s;
+    padding-left: 10px;
+
+    display: grid;
+    grid-template-columns: repeat{5, 1fr};
+    grid-template-rows: 60px auto auto;
+    /* grid-gap: 3px; */
+    grid-template-areas: 
+    "st st st st st"
+    "s1 s2 s3 s4 s4";
+}
+
+.skillsTop {
+    grid-area: st;
+}
+
+.skill1 {
+    grid-area: s1;
+}
+.skill2 {
+    grid-area: s2;
+}
+
+.skill3 {
+    grid-area: s3;
+}
+
+.skill4 {
+    grid-area: s4;
+}
+
+.experiences {
+    grid-area: e;
+    padding-left:10px;
+    display: grid;
+    grid-template-columns: repeat{9, 1fr};
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "et et et et et et et et et "
+    "eh . ei ei ei ei ei ed ed "
+    "eh . ei ei ei ei ei . . "
+    "eh . ep ep ep ep ep ep ep ";
+}
+
+.experienceTop {
+    grid-area: et;
+}
+
+.experienceDate {
+    grid-area: ed;
+}
+
+.experiencesHistory {
+    grid-area: eh;
+    border-right: 1px solid grey;
+}
+
+
+.experienceInfo {
+    grid-area: ei;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+
+.experiencePic {
+    grid-area: ep;
+    display: grid;
+    grid-template-columns: repeat{3, 1fr};
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "p1 p2 p3 ";
+}
+
+.pic1 {
+    grid-area: p1;
+    border: 1px solid black;
+    text-align: center;
+    background-color: grey;
+}
+.pic2 {
+    grid-area: p2;
+    border: 1px solid black;
+    text-align: center;
+    background-color: grey;
+}
+.pic3 {
+    grid-area: p3;
+    border: 1px solid black;
+    text-align: center;
+    background-color: grey;
+}
+
+.references {
+    background-color: lightgray;
+    grid-area: r;
+    padding-left:10px;
+    display: grid;
+    grid-template-columns: repeat{4, 1fr};
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "rt rt rt rt "
+    "r1 r2 r3 r4";
+}
+
+/*
+ border-left: 1px solid grey;
+position: relative;
+height: 65%;
+top: 15%;
+padding-left: 5%;
+padding-right: 5%; 
+*/
+
+.reference1{
+    grid-area: r1;
+    border-right: 1px solid grey;
+    position: relative;
+    height: 95%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.reference2{
+    grid-area: r2;
+    border-right: 1px solid grey;
+    position: relative;
+    height: 95%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.reference3{
+    grid-area: r3;
+    border-right: 1px solid grey;
+    position: relative;
+    height: 95%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.reference4{
+    grid-area: r4;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer {
+    grid-area: f;
+    padding-left:10px;
+}
+
+
+
+/* .wrapper {
+    display: grid;
+    grid-auto-rows: auto auto 7%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "h"
+      "s"
+      "m"
+      "f";
+} */
+
