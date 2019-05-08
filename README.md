@@ -36,3 +36,6 @@ Other future plans:
 
     - Adding pictures...
 
+5/8/19
+new thing to add is styling to match the portfolio. Will switch the colors soon.
+once thats done, will link to the "About Me" section on portfolio. will alsi link portfolio to about me section... but that comes later. 
