@@ -4,7 +4,7 @@ The resume consists of my title, skills, work experience and references in that 
 but listed bellow can be found my progress and my future plans. 
 
 Title:
-    Here I just wanted to place basic info abbout myself such as my name, contact information and what I do (I make things).
+    Here I just wanted to place basic info about myself such as my name, contact information and what I do (I make things).
     Future plans for the title section would be to add the contact section to the far right corner so that its availible, but out the way.
 
 Skills:
